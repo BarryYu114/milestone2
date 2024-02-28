@@ -22,3 +22,12 @@ draw_main_canas(ezgl::renderer *g){
 g->set_line_width(100)
 g->set_color(0,0,120,125);
 g->draw_line({0,0}, {1000,1050});
+
+
+//pixel coordinate(0,0) to (900,619)
+//world coordinate system
+//zoom in can draw everything but only make some of the visible
+//legend on the top left to show the scale
+
+set_oordinate_system (ezgl::SREEN);
+//for draw_text function, the last two parameter uses bound, text larger than then the bound would not draw
